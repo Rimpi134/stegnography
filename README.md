@@ -1,19 +1,45 @@
-# Steganography with AI/ML
+# OpenStego
+OpenStego is a steganography application that provides two functionalities:
 
-This project implements steganography techniques to embed and extract messages in images and audio files. It also includes AI capabilities for data analysis.
+1. Data Hiding: It can hide any data within an image file.
 
-## Installation
+2. Watermarking: Watermarking image files with an invisible signature. It can be used to detect unauthorized file copying.
 
-To install the required packages, run:
+## Usage
 
-```bash
-pip install -r requirements.txt
+### For GUI:
+Use menu shortcut for OpenStego if you used installer. For zip downloads, use the bundled batch file or shell script to launch the GUI.
+```
+openstego.bat                (Windows)
+```
+```
+./openstego.sh               (Linux / MacOS)
+```
 
-python main.py embed --file image.png --message "Hidden Message"
-python main.py extract --file image.png
-python main.py analyze --file data.csv
-### Conclusion
-This code provides a foundational structure for a steganography tool that can embed and extract messages from images and audio files. Additionally, it includes a basic AI component for data analysis. You can extend this implementation with more advanced AI features and integrate quantum computing capabilities as needed based on the specific requirements and context of the application.
+### For command line interface:
+Refer to [online documentation](https://www.openstego.com/cmdline.html).
 
+## Development
+Fork the repository, clone it locally and execute following to build it fully:
+```
+gradlew clean dist           (Windows)
+```
+```
+./gradlew clean dist         (Linux / MacOS)
+```
+*Note:* Windows installer will be generated only if you execute build on Windows environment. It needs [Inno Setup](https://jrsoftware.org/isdl.php) to be installed, and `iscc.exe` to be on `PATH`. If you don't want to generate Windows installer, you can skip the same using following command:
+```
+./gradlew clean dist -x distWin
+```
 
+## Author
+Samir Vaidya (samir [at] openstego.com)
 
+## Homepage
+https://www.openstego.com
+
+## License
+GNU General Public License 2.0 (GPL) (see ```LICENSE``` file)
+
+## Acknowledgement
+The digital watermarking code in this product is based on the code provided by Peter Meerwald. Refer to his excellent thesis on [watermarking](http://www.cosy.sbg.ac.at/~pmeerw/Watermarking/): Peter Meerwald, Digital Image Watermarking in the Wavelet Transfer Domain, Master's Thesis, Department of Scientific Computing, University of Salzburg, Austria, January 2001.
