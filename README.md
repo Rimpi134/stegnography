@@ -1,5 +1,5 @@
-# OpenStego
-OpenStego is a steganography application that provides two functionalities:
+# Stegnography with AI/ML
+steganography application that provides two functionalities:
 
 1. Data Hiding: It can hide any data within an image file.
 
@@ -10,14 +10,13 @@ OpenStego is a steganography application that provides two functionalities:
 ### For GUI:
 Use menu shortcut for OpenStego if you used installer. For zip downloads, use the bundled batch file or shell script to launch the GUI.
 ```
-openstego.bat                (Windows)
+stegnography.bat                (Windows)
 ```
 ```
-./openstego.sh               (Linux / MacOS)
+./stegnography.sh               (Linux / MacOS)
 ```
 
-### For command line interface:
-Refer to [online documentation](https://www.openstego.com/cmdline.html).
+
 
 ## Development
 Fork the repository, clone it locally and execute following to build it fully:
@@ -33,13 +32,11 @@ gradlew clean dist           (Windows)
 ```
 
 ## Author
-Samir Vaidya (samir [at] openstego.com)
+Rimpi Balmiki
 
 ## Homepage
-https://www.openstego.com
+https://github.com/Rimpi134/
 
 ## License
 GNU General Public License 2.0 (GPL) (see ```LICENSE``` file)
 
-## Acknowledgement
-The digital watermarking code in this product is based on the code provided by Peter Meerwald. Refer to his excellent thesis on [watermarking](http://www.cosy.sbg.ac.at/~pmeerw/Watermarking/): Peter Meerwald, Digital Image Watermarking in the Wavelet Transfer Domain, Master's Thesis, Department of Scientific Computing, University of Salzburg, Austria, January 2001.
